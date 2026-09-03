@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: #1d5b8a;
+    color: #e58e9f; /* Pink Soft */
     text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ a:hover {
 
 /* ===== Header & Navbar (Flexbox) ===== */
 header {
-    background-color: #1d5b8a;
+    background-color: #e58e9f; /* Pink Soft */
     color: #fff;
     padding: 1rem 1.5rem;
     display: flex;
@@ -64,18 +64,19 @@ section {
 
 section h2 {
     margin-bottom: 1rem;
-    color: #1d5b8a;
+    color: #e58e9f; /* Pink Soft */
 }
 
 /* ===== Kartu Statistik (CSS Grid) ===== */
 main section:nth-of-type(2) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* Diubah dari 3 menjadi 4 kolom */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 1rem;
 }
 
 main section:nth-of-type(2) article {
-    background-color: #eef4fa;
+    background-color: #fcf0f2; /* Latar belakang pink super muda */
     border-radius: 8px;
     padding: 1.25rem;
     text-align: center;
@@ -83,14 +84,14 @@ main section:nth-of-type(2) article {
 
 main section:nth-of-type(2) article h3 {
     font-size: 0.95rem;
-    color: #55677a;
+    color: #7a555e;
     margin-bottom: 0.5rem;
 }
 
 main section:nth-of-type(2) article p {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #1d5b8a;
+    color: #e58e9f; /* Pink Soft */
 }
 
 /* ===== Tabel ===== */
@@ -106,16 +107,16 @@ th, td {
 }
 
 thead {
-    background-color: #1d5b8a;
+    background-color: #e58e9f; /* Pink Soft */
     color: #fff;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f7f9fb;
+    background-color: #fbf6f7;
 }
 
 tbody tr:hover {
-    background-color: #eef4fa;
+    background-color: #fcf0f2;
 }
 
 td button {
@@ -125,16 +126,20 @@ td button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.85rem;
+    color: #fff; 
 }
 
-td button:first-of-type {
-    background-color: #f0ad4e;
-    color: #fff;
+/* Menggunakan Class Khusus untuk Tombol */
+.btn-edit {
+    background-color: #f0ad4e; /* Orange */
 }
 
-td button:last-of-type {
-    background-color: #d9534f;
-    color: #fff;
+.btn-detail {
+    background-color: #5bc0de; /* Biru Muda / Info */
+}
+
+.btn-hapus {
+    background-color: #d9534f; /* Merah */
 }
 
 /* ===== Form ===== */
@@ -160,7 +165,7 @@ form select {
 }
 
 form button[type="submit"] {
-    background-color: #1d5b8a;
+    background-color: #e58e9f; /* Pink Soft */
     color: #fff;
     border: none;
     padding: 0.6rem 1.5rem;
@@ -170,7 +175,7 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #164869;
+    background-color: #d17889; /* Pink agak gelap untuk hover */
 }
 
 /* ===== Footer ===== */

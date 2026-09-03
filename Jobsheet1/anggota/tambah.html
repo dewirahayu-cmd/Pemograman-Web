@@ -2,7 +2,10 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <!-- Tambahan meta viewport untuk responsivitas di HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMPUS-Mini | Tambah Anggota</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header>
@@ -10,7 +13,9 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Beranda</a></li>
+                <!-- Konsistensi Menu -->
                 <li><a href="../buku/list.html">Daftar Buku</a></li>
+                <li><a href="../buku/tambah.html">Tambah Buku</a></li>
                 <li><a href="list.html">Daftar Anggota</a></li>
                 <li><a href="tambah.html">Tambah Anggota</a></li>
             </ul>
@@ -35,7 +40,13 @@
                 </p>
                 <p>
                     <label for="no_hp">No. HP</label><br>
-                    <input type="text" id="no_hp" name="no_hp">
+                    <!-- Mengubah type="text" menjadi type="tel" -->
+                    <input type="tel" id="no_hp" name="no_hp">
+                </p>
+                <!-- Input Email -->
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
                 </p>
                 <p>
                     <button type="submit">Simpan</button>
