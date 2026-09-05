@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMPUS-Mini | Daftar Buku</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -11,7 +12,7 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Beranda</a></li>
-                <li><a href="list.html">Daftar Buku</a></li>
+                <li><a href="list.html" class="active">Daftar Buku</a></li>
                 <li><a href="tambah.html">Tambah Buku</a></li>
                 <li><a href="../anggota/list.html">Daftar Anggota</a></li>
             </ul>
@@ -21,42 +22,47 @@
     <main>
         <section>
             <h2>Daftar Buku</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Judul</th>
-                        <th>Pengarang</th>
-                        <th>Tahun</th>
-                        <th>Stok</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Laskar Pelangi</td>
-                        <td>Andrea Hirata</td>
-                        <td>2005</td>
-                        <td>4</td>
-                        <td>
-                            <button type="button" class="btn-edit">Edit</button>
-                            <button type="button" class="btn-detail">Detail</button>
-                            <button type="button" class="btn-hapus">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Bumi Manusia</td>
-                        <td>Pramoedya Ananta Toer</td>
-                        <td>1980</td>
-                        <td>2</td>
-                        <td>
-                            <button type="button" class="btn-edit">Edit</button>
-                            <button type="button" class="btn-detail">Detail</button>
-                            <button type="button" class="btn-hapus">Hapus</button>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Judul</th>
+                            <th>Pengarang</th>
+                            <th>Tahun</th>
+                            <th>Stok</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laskar Pelangi</td>
+                            <td>Andrea Hirata</td>
+                            <td>2005</td>
+                            <td>4</td>
+                            <td>
+                                <div class="actions">
+                                    <button type="button" class="btn-edit">Edit</button>
+                                    <button type="button" class="btn-detail">Detail</button>
+                                    <button type="button" class="btn-hapus">Hapus</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bumi Manusia</td>
+                            <td>Pramoedya Ananta Toer</td>
+                            <td>1980</td>
+                            <td>2</td>
+                            <td>
+                                <div class="actions">
+                                    <button type="button" class="btn-edit">Edit</button>
+                                    <button type="button" class="btn-detail">Detail</button>
+                                    <button type="button" class="btn-hapus">Hapus</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
 
